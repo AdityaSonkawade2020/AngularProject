@@ -1,0 +1,63 @@
+<div>
+    <h1 class="alert alert-dark" style="text-align: center;">Customer login</h1>
+</div>
+<div class="jumbotron">
+<div class="table table-bordered  bg-muted">
+     <div>
+         <form [formGroup]="form" (ngSubmit)="register()">
+             <div>
+                 <label>Customer Name</label>
+                 <input type="text" placeholder="Enter your name"
+                 formControlName="customer_name"required/>
+                 <div class="alert alert-dark" *ngIf="form.get('customer_name').invalid && form.get('customer_name').touched">
+                     <div *ngIf="form.get('customer_name').errors.required">
+                         Name is required
+                     </div>
+                     <div *ngIf="form.get('customer_name').errors.pattern">
+                        Name should contain only charecter
+                    </div>
+                 </div>
+             </div>
+
+             <div>
+                <label>Customer Password</label>
+                <input type="password" placeholder="Enter your Password"
+                formControlName="customer_password"/>
+            </div>
+
+
+            <div>
+                <label>Customer Email</label>
+                <input type="text" placeholder="Enter your Email Id"
+                formControlName="customer_email"/>
+                <div class="alert alert-dark" *ngIf="form.get('customer_email').invalid && form.get('customer_email').touched">
+                    <div *ngIf="form.get('customer_email').errors.required">
+                        Email is required
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div>
+                <label>Customer Mobile</label>
+                <input type="text" placeholder="Enter your name"
+                formControlName="customer_mobile" required/>
+               
+            </div>
+
+            <div>
+                <label>Customer city</label>
+                <input type="text" placeholder="Enter your city Name"
+                formControlName="customer_city" required/>
+                
+            </div>
+     <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="Submit"class="btn btn-success" >Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <button type="Reset" class="btn btn-danger">Clear Form</button>
+     </div>
+
+      <br><br><br>
+
+         </form>
+     </div>
+    

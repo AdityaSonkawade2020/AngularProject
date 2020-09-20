@@ -1,0 +1,35 @@
+<div class="jumbotron">
+
+<table class=" bg-muted table table-bordered  table-striped table-hover">
+    <thead>
+        <tr>
+            <th style="text-align: center; background-color: gray; color:white" colspan="9">Product Details</th>
+        </tr>
+<tr>
+     <th>Mobile Name</th>
+     <!--<th>Availability</th>-->
+     <th>Battery</th>
+     <th>Processsor</th>
+     <th>Price</th>
+     <th>Image of product</th>
+     <th>Mobile Description</th>
+     <th>Edit Data</th>
+     <th>Delete Data</th>
+ </tr>
+</thead>
+   <tbody>
+       <tr *ngFor="let p of product">
+           <td>{{p.mobile_name}}</td>
+           <!--<td>{{p.mobile_ailability}}</td>-->
+           <td>{{p.mobile_battery}}</td>
+           <td>{{p.mobile_Processsor}}</td>
+           <td>{{p.mobile_price}}</td>
+           <td>{{p.mobile_image}}</td>
+           <td>{{p.mobile_description}}</td>
+           <td><a class="btn btn-primary" [routerLink]="['/updateproduct',p.id]">Edit</a></td>
+           <td><a class="btn btn-danger"(click)="delete(p.id)">Delete</a></td>
+       </tr>
+   </tbody>
+
+</table>
+</div>

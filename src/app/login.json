@@ -1,0 +1,52 @@
+{
+  "login": [
+    {
+      "customer_name": "Aditya",
+      "customer_password": "789654",
+      "customer_email": "adi7@gmail.com",
+      "customer_mobile": "7896541230",
+      "customer_city": "solapur",
+      "id": 1
+    },
+    {
+      "customer_name": "Aniket",
+      "customer_password": "123586",
+      "customer_email": "ani9@gmail.com",
+      "customer_mobile": "9966885544",
+      "customer_city": "pune",
+      "id": 2
+    },
+    {
+      "customer_name": "Ashish",
+      "customer_password": "456123",
+      "customer_email": "ash5@gmail.com",
+      "customer_mobile": "7894561230",
+      "customer_city": "sangli",
+      "id": 3
+    },
+    {
+      "customer_name": "Suhas ",
+      "customer_password": "suhas123",
+      "customer_email": "suhas@gmail.com",
+      "customer_mobile": "9988665522",
+      "customer_city": "Mumbai",
+      "id": 4
+    },
+    {
+      "customer_name": "suraj",
+      "customer_password": "78966",
+      "customer_email": "suraj7@gmail.com",
+      "customer_mobile": "7894561239",
+      "customer_city": "Mumbai",
+      "id": 5
+    },
+    {
+      "customer_name": "",
+      "customer_password": "",
+      "customer_email": "",
+      "customer_mobile": "",
+      "customer_city": "",
+      "id": 6
+    }
+  ]
+}

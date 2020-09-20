@@ -1,0 +1,50 @@
+<div class=" jumbotron">
+    <h1 style="text-align: center;" class="alert alert-primary">  Product Data</h1>
+    <div *ngIf="form" class="table table-border alert alert-muted text-black">
+    <form [formGroup]="form" (ngSubmit)="update()">
+        <div>
+            <label>&nbsp;&nbsp;Mobile Name :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter model name" formControlName= "mobile_name" />
+            
+        </div>
+       <!---- <div>
+            <label>&nbsp;&nbsp; Availability :&nbsp;&nbsp;</label>
+            <input type="checkbox" formControlName= "mobile_ailability" />
+        </div>-->
+        <div>
+            <label>&nbsp;&nbsp;Battery :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter Battery capacity" formControlName= "mobile_battery" />
+            
+        </div>
+        
+
+        <div>
+            <label>&nbsp;&nbsp;Processsor :&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Enter Processsor details" formControlName= "mobile_Processsor" />
+        </div>
+       
+        <div>
+            <label>&nbsp;&nbsp;Price :&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Enter Price" formControlName= "mobile_price" />
+        </div>
+       
+        <div>
+            <label>&nbsp;&nbsp;Image of product :&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Paste path of image here" formControlName= "mobile_image" />
+        </div>
+        <div>
+            <label>&nbsp;&nbsp;Mobile Description :&nbsp;&nbsp;</label>
+            <input type="text"  placeholder="Add description of the product here" formControlName= "mobile_description" />
+        </div>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary"> Save</button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset" class="btn btn-danger"> Clear</button>
+        </div>
+    </form>
+</div>
+
+   
+   
+    
+</div>
